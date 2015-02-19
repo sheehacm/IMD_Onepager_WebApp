@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myNoteApp">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>OnePager</title>
+		<meta name="description" content="">
+		<meta name="author" content="Colin Sheehan">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Styles -->
+		<link href="../styles/bootstrap.min.css" rel="stylesheet">
+		<link href="../styles/strengths.css" rel="stylesheet">
+
+		<!--Scripts -->
+		<script type="text/javascript" src= "../angular.min.js"></script>
+		<script type="text/javascript" src= "../app.js"></script>
+	</head>	
+	<body>
+	<div ng-controller="strengthsCtrl">
+
+		<!--Header-->
+		<div class= "container-fluid" id= "header">
+		  <div class= "row">
+		    <div class= "col-xs-3">
+		      <a id="last" class="navbar-brand" href="#"><img id="last" alt="Brand" src="../assets/navbuttons/last.png"></a>
+		    </div>
+		    <div class= "col-xs-6">
+		      <h4 id= "title">Choose Your Strengths</h4>
+		    </div>
+		    <div class= "col-xs-3">
+		      <a id="next" class="navbar-brand" href="#"><img id="next" alt="Brand" src="../assets/navbuttons/next.png"></a>
+		    </div>
+		  </div>
+		</div>  
+
+
+	  	<!--selectView-->
+	  <div class= "container-fluid">
+	    <div class= "row">
+	      <div class= "col-xs-8 col-xs-offset-2">
+	        <img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons">
+	        <img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons">
+	      </div>
+	    </div>
+	  </div>
+
+	  	<!--categoryView-->
+	  <div class= "container-fluid" id= "strengthsType">
+	    <div class= "row">
+	      <div class= "col-sm-4 col-xs-16" id="typeWrapper">
+	        <img src= "../assets/newbuttons/academic_2.png" class= "strengthsCategory">
+	        <img src= "../assets/newbuttons/extra_curricular_2.png" class= "strengthsCategory">
+	        <img src= "../assets/newbuttons/social_2.png" class= "strengthsCategory">
+	      </div>
+
+	      	<!--iconView-->
+	      <div class= "col-sm-6 col-xs-8" id= "iconWrapper">
+	      	<img src= "../assets/newbuttons/Strengths/Academic/english-writing.png" class= "strengthsType">
+	      	<img src= "../assets/newbuttons/Strengths/Academic/geography.png" class= "strengthsType">
+	      	<img src= "../assets/newbuttons/Strengths/Academic/language.png" class= "strengthsType">
+	      	<img src= "../assets/newbuttons/chemistrys.png" class= "strengthsType">
+	      	<img src= "../assets/newbuttons/Strengths/Academic/math_2.png" class= "strengthsType">
+	      	<img src= "../assets/newbuttons/Strengths/Academic/art-music.png" class= "strengthsType">
+	      </div>
+	      <div class= "col-sm-2" id="cameraButtonWrap">
+	      	<img src= "../assets/mediabuttons/camera_button.png" id= "cameraButton">
+	      </div>
+	    </div>
+	  </div>
+
+
+	</div>
+
+	</body>
+</html>
