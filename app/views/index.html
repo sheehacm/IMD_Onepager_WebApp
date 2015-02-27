@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myNoteApp">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 
@@ -15,67 +15,62 @@
 
 		<!-- Styles -->
 		<link href="../styles/bootstrap.min.css" rel="stylesheet">
-		<link href="../styles/strengths.css" rel="stylesheet">
+		<link href="../styles/custom.css" rel="stylesheet">
 
 		<!--Scripts -->
-		<script type="text/javascript" src= "../angular.min.js"></script>
-		<script type="text/javascript" src= "../app.js"></script>
+		<script type="text/javascript" src= "../controllers/jquery-1.11.1.min.js"></script>		
+		<script type="text/javascript" src= "../controllers/controller.js"></script>
 	</head>	
 	<body>
-	<div ng-controller="strengthsCtrl">
+	<form>
 
-		<!--Header-->
-		<div class= "container-fluid" id= "header">
-		  <div class= "row">
-		    <div class= "col-xs-3">
-		      <a id="last" class="navbar-brand" href="#"><img id="last" alt="Brand" src="../assets/navbuttons/last.png"></a>
-		    </div>
-		    <div class= "col-xs-6">
-		      <h4 id= "title">Choose Your Strengths</h4>
-		    </div>
-		    <div class= "col-xs-3">
-		      <a id="next" class="navbar-brand" href="#"><img id="next" alt="Brand" src="../assets/navbuttons/next.png"></a>
-		    </div>
-		  </div>
-		</div>  
+		<!--Strengths-Page-->
+		<div class= "page" id= "strengthsPage">
 
+			<!--Header-->
+			<div id= "header">
+			      <a class= "headerButtons" href="#"><img id="last" alt="Brand" src="../assets/navbuttons/last.png"></a>
+			      <a class= "headerButtons" id ="headerNext" href="#"><img id="next" alt="Brand" src="../assets/navbuttons/next.png"></a>
+			</div>
+			<h4 id= "title">Choose Your Strengths</h4>
 
-	  	<!--selectView-->
-	  <div class= "container-fluid">
-	    <div class= "row">
-	      <div class= "col-xs-8 col-xs-offset-2">
-	        <img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons">
-	        <img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons">
-	      </div>
-	    </div>
-	  </div>
+			<!--Selected-->
+			<div class= "selectedHolder">
+				<img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons">
+		        <img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons">
+		        <img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons" style= "visibility: hidden">
+		        <img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons" style= "visibility: hidden">
+			</div>
 
-	  	<!--categoryView-->
-	  <div class= "container-fluid" id= "strengthsType">
-	    <div class= "row">
-	      <div class= "col-sm-4 col-xs-16" id="typeWrapper">
-	        <img src= "../assets/newbuttons/academic_2.png" class= "strengthsCategory">
-	        <img src= "../assets/newbuttons/extra_curricular_2.png" class= "strengthsCategory">
-	        <img src= "../assets/newbuttons/social_2.png" class= "strengthsCategory">
-	      </div>
+			<!--Choices-->
+			<div class= "chooseHolder">
+				<img src="../assets/gray_overlay.png" id= "chooseHolder">
 
-	      	<!--iconView-->
-	      <div class= "col-sm-6 col-xs-8" id= "iconWrapper">
-	      	<img src= "../assets/newbuttons/Strengths/Academic/english-writing.png" class= "strengthsType">
-	      	<img src= "../assets/newbuttons/Strengths/Academic/geography.png" class= "strengthsType">
-	      	<img src= "../assets/newbuttons/Strengths/Academic/language.png" class= "strengthsType">
-	      	<img src= "../assets/newbuttons/chemistrys.png" class= "strengthsType">
-	      	<img src= "../assets/newbuttons/Strengths/Academic/math_2.png" class= "strengthsType">
-	      	<img src= "../assets/newbuttons/Strengths/Academic/art-music.png" class= "strengthsType">
-	      </div>
-	      <div class= "col-sm-2" id="cameraButtonWrap">
-	      	<img src= "../assets/mediabuttons/camera_button.png" id= "cameraButton">
-	      </div>
-	    </div>
-	  </div>
+				<div class= "categoryHolder">
+					<img src= "../assets/newbuttons/academic_2.png" class= "category" id= "active">
+				    <img src= "../assets/newbuttons/extra_curricular_2.png" class= "category">
+				    <img src= "../assets/newbuttons/social_2.png" class= "category">
+				</div>
 
+				<div class= "chooseIcons">
+					<div class= "typeHolder">
+						<img src= "../assets/newbuttons/Strengths/Academic/english-writing.png" class= "categoryType" id= "0">
+			      		<img src= "../assets/newbuttons/Strengths/Academic/geography.png" class= "categoryType" id= "1">
+			      		<img src= "../assets/newbuttons/Strengths/Academic/language.png" class= "categoryType" id= "2">	
+						<img src= "../assets/newbuttons/chemistrys.png" class= "categoryType" id= "3">
+			      		<img src= "../assets/newbuttons/Strengths/Academic/math_2.png" class= "categoryType" id= "4">
+			      		<img src= "../assets/newbuttons/Strengths/Academic/art-music.png" class= "categoryType" id= "5">
+					</div>
 
-	</div>
-
+					<img src= "../assets/mediabuttons/camera_button.png" id= "cameraButton">
+				</div>
+			</div>
+			
+			<!--Footer-->
+			<div id= "footer">
+				<img src="../assets/login/Helpicon_3.png" id="footerImg">
+			</div>
+		</div> 
+	</form>
 	</body>
 </html>

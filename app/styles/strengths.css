@@ -10,6 +10,7 @@
 
 #last{
 	float: left;
+	margin-top: -3px;
 }
 
 #title{
@@ -17,22 +18,27 @@
 	font-size: 2em;
 	font-family: Helvetica,sans,sans-serif;
 	color: white;
-	line-height: 70px;
+	line-height: 50px;
 }
 
 #next{
 	float: right;
+	margin-top: -3px;
 }
 /*------------------------------*/
 
 
 
-/*-----------Icons-----------*/
-.selectedIcons{
-	width:26%;
+/*-------------Icons-------------*/
+#active{
+	opacity: 0.75;
 }
 
-#strengthsType{
+.selectedIcons{
+	width:24%;
+}
+
+#categoryContainer{
 	background-color: grey;
 	margin-top: 3%;
 	padding-bottom: 2%;
@@ -43,17 +49,17 @@
 	padding-right: 0px;
 }
 
-.strengthsCategory{
+.category{
 	margin-top: 15px;
 	width: 90%;
 }
 
-.strengthsType{
+.categoryType{
 	margin-top: 15px;
 	width: 32%;
 }
 
-.strengthsType:hover{
+.categoryType:hover{
 	opacity: 0.5;
 }
 
@@ -71,6 +77,23 @@
 /*------------------------------*/
 
 
+footer{
+	background-color: black;
+	height: 70px;
+}
+
+
+#footer{
+	width: 50px;
+	margin-top: 10px;
+	margin-right: 20px;
+	float: right;	
+}
+
+
+
+
+
 
 /*--Responsive Changes--*/
 
@@ -86,7 +109,7 @@
 
 	#title{
 		font-size: 20px;
-		line-height: 50px;
+		line-height: 30px;
 
 	}
 
@@ -95,14 +118,14 @@
 		width: 80px;
 	}
 
-	#typeWrapper{
+	#categoryWrapper{
 		padding-left: 5%;
 	}
 
 	#iconWrapper{
 		margin-left: 4%;
 	}
-	.strengthsCategory{
+	.category{
 		width: 32%;
 	}
 

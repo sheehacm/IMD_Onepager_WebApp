@@ -1,0 +1,211 @@
+
+form{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+
+.page{
+	background: url("../assets/backgrounds/backgroundtexture.png");
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*--Header--*/
+
+
+
+
+#header{
+	background: url("../assets/login/topbar.png");
+	height: 8%;
+	width: 100%;
+	max-height: 72px;
+	position: absolute;	
+}
+
+.headerButtons{
+	width: 10%;
+	height: 90%;
+	position: absolute;
+}
+
+#last{
+	position: absolute;
+	height: 85%;
+	width: 85%;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+#title{
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	width: 100%;
+	font-size: 4vmin;
+	font-family: Helvetica,sans,sans-serif;	
+	line-height: 0;
+	top: 2%;
+	color: white;
+}
+
+#headerNext{
+	margin-left: 81%;
+	position: absolute;
+}
+
+#next{
+	position: absolute;
+	height: 85%;
+	width: 85%;
+	margin-top: 5%;
+	margin-left: 100%;
+}
+
+#footer{
+	background: url("../assets/login/bottombar.png");
+	position: absolute;
+	bottom: 0;
+	width: 101%;
+	height: 8%;
+	max-height: 72px;
+	margin-left: -1%;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*--Selected-Icons--*/
+
+
+
+
+.selectedHolder{
+	position: fixed;
+	top: 11%;
+	left: 22.5%;
+	width: 60%;
+	height: 20%;
+}
+
+.selectedIcons{
+	width: 20%;
+	height: 100%;
+	margin-left: 2%;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*--Category--*/
+
+
+
+
+.chooseHolder{
+	position: absolute;
+	bottom: 8%;
+	width: 100%;
+	height: 58%;	
+}
+
+#chooseHolder{
+	width: 100%;
+	height: 100%;
+}
+
+.categoryHolder{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	top: 4%;
+	left:1.7%;
+}
+
+.category{
+	display: block;
+	width: 27%;
+	height: 28.7%;
+	margin-bottom: .8%;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*--Type-Icons--*/
+
+
+
+
+.chooseIcons{
+	z-index: 1;
+	position: fixed;
+	height: 47%;
+	width:66%;
+	top:39.5%;
+	left: 32%;
+	display: inline;
+}
+
+.typeHolder{
+	position: absolute;
+	width:80%;
+	height: 100%;
+	left: 5%;
+	display: inline;
+}
+
+.categoryType{
+	width: 25%;
+	height: 50%;
+	margin-right: 5%;
+}
+
+#cameraButton{
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	left: 78%;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*--Footer--*/
+
+
+
+
+#footer{
+	background: url("../assets/login/bottombar.png");
+	position: absolute;
+	bottom: 0;
+	width: 101%;
+	height: 8%;
+	max-height: 72px;
+	margin-left: -1%;
+}
+
+#footerImg{
+	position: absolute;
+	width: 4%;
+	height: 80%;
+	left: 92.5%;
+	top: 10%;
+}
+
+
+
+
