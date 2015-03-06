@@ -51,7 +51,7 @@ form{
 	font-size: 4vmin;
 	font-family: Helvetica,sans,sans-serif;	
 	line-height: 0;
-	top: 2%;
+	top: 2.5%;
 	color: white;
 }
 
@@ -137,6 +137,11 @@ form{
 	width: 27%;
 	height: 28.7%;
 	margin-bottom: .8%;
+	opacity: .8;
+}
+
+#active{
+	opacity: 1;
 }
 
 
@@ -162,14 +167,15 @@ form{
 	position: absolute;
 	width:80%;
 	height: 100%;
-	left: 5%;
+	left: 10%;
 	display: inline;
 }
 
 .categoryType{
-	width: 25%;
-	height: 50%;
-	margin-right: 5%;
+	width: 23%;
+	height: 47%;
+	margin-bottom: 3%; 
+	margin-right: 3%;
 }
 
 #cameraButton{
@@ -177,6 +183,10 @@ form{
 	width: 20%;
 	height: 100%;
 	left: 78%;
+}
+
+[title~="selected"]{
+	opacity: 0.5;
 }
 
 
@@ -205,6 +215,81 @@ form{
 	left: 92.5%;
 	top: 10%;
 }
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*--Splash-Icons--*/
+
+
+
+
+.splashIcons{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 3;
+	visibility: hidden;
+}
+
+.splashTop{
+	position: fixed;
+	opacity: normal;
+	height: 60%;
+	width: 100%
+}
+
+.splashIcon{
+	position: absolute;
+	height: 100%;
+	width: 33.5%;
+	margin-left: 2%;
+}
+
+.splashText{
+	position: absolute;
+	left: 45%;
+	top: 20%;
+	font-family: Helvetica,sans,sans-serif;	
+	color: white;
+}
+
+#iconTitle{
+	font-size: 10vmin;
+}
+
+#iconCat{
+	margin-top: 20%;
+	font-size: 5vmin;
+}
+
+.splashBottom{
+	position: fixed;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+}
+
+.goBack{
+	position: absolute;
+	width: 27%;
+	height: 45%;
+	margin-left: 2%;
+	bottom: 5%;
+}
+
+.select{
+	position: absolute;
+	width: 27%;
+	height: 45%;
+	right: 2%;
+	bottom: 5%;
+}
+
+
+
 
 
 

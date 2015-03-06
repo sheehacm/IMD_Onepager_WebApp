@@ -36,10 +36,10 @@
 
 			<!--Selected-->
 			<div class= "selectedHolder">
-				<img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons">
-		        <img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons">
-		        <img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons" style= "visibility: hidden">
-		        <img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons" style= "visibility: hidden">
+				<img src= "../assets/newbuttons/white_button_glow.png" class="selectedIcons" id= "one">
+		        <img src= "../assets/newbuttons/white_button_top_X.png" class="selectedIcons" id= "two">
+		        <img src= "../assets/newbuttons/white_button_top_X.png" class="selectedIcons" id= "three" style= "visibility: hidden">
+		        <img src= "../assets/newbuttons/white_button_top_X.png" class="selectedIcons" id= "four" style= "visibility: hidden">
 			</div>
 
 			<!--Choices-->
@@ -47,19 +47,19 @@
 				<img src="../assets/gray_overlay.png" id= "chooseHolder">
 
 				<div class= "categoryHolder">
-					<img src= "../assets/newbuttons/academic_2.png" class= "category" id= "active">
-				    <img src= "../assets/newbuttons/extra_curricular_2.png" class= "category">
-				    <img src= "../assets/newbuttons/social_2.png" class= "category">
+					<img src= "../assets/newbuttons/academic_2.png" class= "category" title= "academic" id= "active">
+				    <img src= "../assets/newbuttons/extra_curricular_2.png" class= "category" title= "extra_curricular">
+				    <img src= "../assets/newbuttons/social_2.png" class= "category" title= "social">
 				</div>
 
 				<div class= "chooseIcons">
 					<div class= "typeHolder">
-						<img src= "../assets/newbuttons/Strengths/Academic/english-writing.png" class= "categoryType" id= "0">
-			      		<img src= "../assets/newbuttons/Strengths/Academic/geography.png" class= "categoryType" id= "1">
-			      		<img src= "../assets/newbuttons/Strengths/Academic/language.png" class= "categoryType" id= "2">	
-						<img src= "../assets/newbuttons/chemistrys.png" class= "categoryType" id= "3">
-			      		<img src= "../assets/newbuttons/Strengths/Academic/math_2.png" class= "categoryType" id= "4">
-			      		<img src= "../assets/newbuttons/Strengths/Academic/art-music.png" class= "categoryType" id= "5">
+						<img src= "../assets/newbuttons/Strengths/Academic/english-writing.png" title= "Academic" name= "Writing & English" class= "categoryType" id= "0">
+			      		<img src= "../assets/newbuttons/Strengths/Academic/geography.png" title= "Academic" name= "Geography" class= "categoryType" id= "1">
+			      		<img src= "../assets/newbuttons/Strengths/Academic/language.png" title= "Academic" name= "Language" class= "categoryType" id= "2">	
+						<img src= "../assets/newbuttons/chemistrys.png" title= "Academic" name= "Science" class= "categoryType" id= "3">
+			      		<img src= "../assets/newbuttons/Strengths/Academic/math_2.png" title= "Academic" name= "Math" class= "categoryType" id= "4">
+			      		<img src= "../assets/newbuttons/Strengths/Academic/art-music.png" title= "Academic" name= "Music & Art" class= "categoryType" id= "5">
 					</div>
 
 					<img src= "../assets/mediabuttons/camera_button.png" id= "cameraButton">
@@ -70,6 +70,22 @@
 			<div id= "footer">
 				<img src="../assets/login/Helpicon_3.png" id="footerImg">
 			</div>
+
+			<!--Splash-Screens-->
+			<div class= "splashIcons">
+				<div class= "splashTop">
+					<img src= "../assets/newbuttons/Strengths/Academic/english-writing.png" class= "splashIcon" id= "0">
+					<div class= "splashText">
+						<h4 id= "iconTitle"></h4>
+						<p id= "iconCat"></p>
+					</div>
+				</div>
+				<div class= "splashBottom">
+					<img src="../assets/newbuttons/back_button.png" class="goBack">
+					<img src="../assets/newbuttons/select_button.png" class= "select">
+				</div>
+			</div>
+
 		</div> 
 	</form>
 	</body>
